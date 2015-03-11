@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>25 minutos de Web Semântica</title>
+
+		<meta name="description" content="25 minutos de Web Semântica para o Tropical Ruby">
+		<meta name="author" content="Yaso">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/sky-w3c.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>Semantic Web</h1>
+					<h3>em 25 minutos</h3>
+					<p>
+						<small>Por <a href="http://yaso.is">Yaso</a> / <a href="http://twitter.com/yaso">@yaso</a></small>
+						</br>
+						<small><a href="http://w3c.br"><img src="https://www.w3.org/Icons/w3c_home"></a></small>
+					</p>
+				</section>
+
+				<section>
+					<h2>Cgi.br</h2>
+					<p>
+						<a href="http://www.cgi.br/"><img src="http://www.cgi.br/docs-assets/images/logo-cgi.br.png"></a>
+					</p>
+				</section>
+
+				<section>
+					<section>
+						<h2>registro.br</h2>
+						<p><a href="http://Nic.br">Nic.br</a></p>
+						<p><a href="http://cetic.br">cetic.br</a></p>
+						<p><a href="http://septro.br">septro.br</a></p>
+						<p><a href="http://ceWeb.br">ceWeb.br</a></p>
+						<p><a href="http://ppt.br">ppt.br</a></p>
+						<br>
+					</section>
+				</section>
+				<!-- Fim dos slides do CGI, agora sobre o W3C no Brasil -->
+				<section>
+					<section>
+						<h2>W3C</h2>
+						<p><a href="http://www.w3.org/2013/dwbp/wiki/Main_Page">Dados na Web</a></p>
+						<p><a href="http://www.w3.org/Translations/WCAG20-pt-br/">Acessibilidade</a></p>
+						<p><a href="http://premio.w3c.br/">Todos Web</a></p>
+						<p><a href="http://www.w3c.br/Materiais">Publicações</a></p>
+						<p><a href="http://conferenciaweb.w3c.br/">Webbr</a></p>
+						<p>Entre outros... </p>
+					</section>
+				</section>
+
+				<section>
+					<h2>Web</h2>
+					<p><a href="http://www.w3.org/History/1989/proposal.html">TimBL propôs em 1989</a></p>
+					<p><a href="http://www.w3.org/2014/Process-20140801/"><img src="http://www.w3.org/2005/Talks/0227-rectrack/rectrack.png"></a></p>
+				</section>
+				<!-- Web semantica -->
+				<section>
+					<h2>Web Semântica</h2>
+					<p><ul>
+						<li>Dados -> informação</li>
+						<li>Web dos significados</li>
+						<li>Mas como adicionar <strong>significado?</strong></li>
+						<li>Como explicar às máquinas as <strong>relações?</strong></li>
+					</ul>
+					</p>
+					<p>
+						<a href="http://www.w3.org/standards/semanticweb/"><img src="https://farm9.staticflickr.com/8680/16103987913_d9deeb6b03_o.png"></a>
+					</p>
+				</section>
+
+				<section>
+					<h2>RDF</h2>
+					<p><ul>
+						<li><a href="rdf">Resource Description Framework</a></li>
+						<li>É um <strong>modelo</strong> para representação de dados</li>
+						<li><strong>não</strong> é um formato</li>
+						<li>Define uma maneira de explicar <strong>relações</strong></li>
+					</ul>
+					</p>
+				</section>
+
+				<section>
+					<h2>RDF</h2>
+					<p><ul>
+						<li><a href="http://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/">Triplas!</a></li>
+						<li>Entidade => atributo => valor</li>
+						<li>Sujeito => predicado => objeto</li>
+						<li>entity - conferência - Tropical Ruby</li>
+						<p><small>http://tropicalrb.io  -  http://purl.org/dc/dcmitype/Event  -  Tropical Ruby</small></p>
+						<p><img src="http://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/rdf-graph.svg"></p>
+						<p>Um conjunto de triplas é um <a href="http://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/#dfn-rdf-graph">RDF graph</a></p>
+					</ul>
+					</p>
+				</section>
+
+				<section>
+					<section>
+						<h2>RDF: Alguns formatos</h2>
+						<p><ol>
+							<li><a href="http://www.w3.org/TR/xhtml-rdfa-primer/">RDFa (HTML)</a></li>
+							<li><a href="http://www.w3.org/TR/turtle/">Turtle</a></li>
+							<li><a href="http://www.w3.org/TR/rdf-syntax-grammar/">RDF/XML</a></li>
+							<li><a href="http://www.w3.org/TR/json-ld/">JSON-LD</a></li>
+						</ol>
+						</p>
+					</section>
+					<!-- Notação RDFa -->
+					<section>
+						<h2>1: <a href="http://rdfa.info/">RDFa</a></h2>
+						<p>Inserir dados <strong>no</strong> HTML</p>
+
+						<!-- um poucoo de rdfa -->
+
+						<pre><code data-trim contenteditable>
+
+<html xmlns:foaf="http://xmlns.com/foaf/0.1/">
+  <head>
+    <title>Yasodara Córdova's profile</title>
+    <link rel="foaf:primaryTopic" foaf:"maker" href="#me"/>
+  </head>
+  <body>
+    <div about="#me" typeof="foaf:Person">
+      <span property="foaf:name">Yasodara</span>
+      <a rel="foaf:weblog" href="http://yaso.is/this">Website</a>
+    </div>
+  </body>
+</html>
+						</code></pre>
+					</section>
+
+				<!-- Notação Turtle -->
+					<section>
+						<h2>2: <a href="http://www.w3.org/TR/turtle/">Turtle</a></h2>
+						<p>Terse RDF Triple Language</p>
+						<p>Notação <strong>"textual"</strong> para RDF</p>
+						<p>mais fácil para humanos do que XML/RDF</p>
+					</section>		
+					<!-- RDF/XML -->
+					<section>
+						<h2>3: <a href="http://www.w3.org/TR/rdf-syntax-grammar/">RDF/XML</a></h2>
+						<p>sintaxe <a href="http://www.w3.org/TR/xml/">XML</a> para definir grafos RDF</p>
+						<p><a href="http://www.w3.org/TR/rdf-syntax-grammar/#example7"><img src="http://www.w3.org/TR/rdf-syntax-grammar/figure1.png"></a></p>
+					</section>
+					<!-- Json-ld -->
+					<section>
+						<h2>4: <a href="http://www.w3.org/TR/json-ld/">JSON-LD</a></h2>
+							<p><ul>
+								<li>Devs que querem colocar LD em apps que usam JSON</li>
+								<li>Devs podem converter json em json-ld</li>
+								<li>devs que queiram gerar ou consumir dados com sintaxe JSON</li>
+							</ul></p>
+						<p>exemplo do <a href="http://json-ld.org/">Json-ld</a></p>
+						<pre><code data-trim contenteditable>
+
+{
+  "@context": "http://json-ld.org/contexts/person.jsonld",
+  "@id": "http://dbpedia.org/resource/John_Lennon",
+  "name": "John Lennon",
+  "born": "1940-10-09",
+  "spouse": "http://dbpedia.org/resource/Cynthia_Lennon"
+}
+						</code></pre>
+					</section>
+					</section>
+
+				<section>
+					<section id="fragments"
+>						<h2>Exemplos</h2>
+						<p><a href="http://www.cookable.me/">Cookable</a></p>
+						<p>Existem <a href="openfoodfacts">bases linkadas</a> que podem ser utilizadas</p>
+						<p><a href="http://dbtune.org"><img src="http://dbtune.org/lod.png" height="300px"></a></p>
+
+				</section>
+				<section>
+					<h2>Exemplos</h2>
+							<ul>
+							<li><a href="http://www.parsely.com/">Parse.ly</a></li>
+							<li><a href="http://en.lodlive.it/">LodLive</a></li>
+							<li><a href="http://productdb.org/">ProductDB</a></li>
+							<li><a href="http://www.imdb.com/">ImDB</a></li>
+							<li><a href="http://sameas.org/">Sameas.org</a></li>
+							</ul>
+
+				</section>
+				<section>
+					<h2>Obrigada!</h2>
+					<p>@w3cBrasil</p>
+					<p>@yaso</p>
+					<p>yaso@nic.br</p>
+				</section>
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
